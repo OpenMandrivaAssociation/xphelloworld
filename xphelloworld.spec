@@ -40,8 +40,8 @@ rm -rf %{buildroot}
 %{_bindir}/xphelloworld
 %{_bindir}/xpsimplehelloworld
 %{_bindir}/xpxthelloworld
-%{_mandir}/man1/xphelloworld.1.bz2
-%{_mandir}/man1/xpxthelloworld.1.bz2
-%{_mandir}/man1/xpsimplehelloworld.1.bz2
+%{_mandir}/man1/xphelloworld.1*
+%{_mandir}/man1/xpxthelloworld.1*
+%{_mandir}/man1/xpsimplehelloworld.1*
 
 
