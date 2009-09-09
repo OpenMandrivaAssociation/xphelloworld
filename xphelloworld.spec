@@ -4,6 +4,7 @@ Release: %mkrel 9
 Summary: Sends a test page to an Xprint printer
 Group: Development/X11
 Source: http://xorg.freedesktop.org/releases/individual/app/%{name}-%{version}.tar.bz2
+Patch0: xphelloworld-1.0.1-fix-xaw8-BR.diff
 License: MIT
 BuildRoot: %{_tmppath}/%{name}-root
 
@@ -22,8 +23,10 @@ if none is specified).
 
 %prep
 %setup -q -n %{name}-%{version}
+%patch0 -p0
 
 %build
+autoconf
 %configure2_5x	--x-includes=%{_includedir}\
 		--x-libraries=%{_libdir}
 
