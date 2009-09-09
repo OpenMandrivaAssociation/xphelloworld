@@ -1,6 +1,6 @@
 Name: xphelloworld
 Version: 1.0.1
-Release: %mkrel 8
+Release: %mkrel 9
 Summary: Sends a test page to an Xprint printer
 Group: Development/X11
 Source: http://xorg.freedesktop.org/releases/individual/app/%{name}-%{version}.tar.bz2
