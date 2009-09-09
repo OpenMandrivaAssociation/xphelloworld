@@ -8,7 +8,7 @@ License: MIT
 BuildRoot: %{_tmppath}/%{name}-root
 
 BuildRequires: libxaw-devel >= 1.0.1
-BuildRequires: lesstif-devel >= 1.0.1
+BuildRequires: lesstif-devel
 BuildRequires: libxp-devel >= 1.0.0
 BuildRequires: libxprintapputil-devel >= 1.0.1
 BuildRequires: libxprintutil-devel >= 1.0.1
