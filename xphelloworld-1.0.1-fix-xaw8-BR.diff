@@ -1,0 +1,21 @@
+diff -p -up ./configure.ac.tv ./configure.ac
+--- ./configure.ac.tv	2009-09-09 15:26:44.000000000 +0200
++++ ./configure.ac	2009-09-09 15:26:50.000000000 +0200
+@@ -71,7 +71,7 @@ AM_CONDITIONAL([BUILD_MOTIFAPPS], test "
+ # xpawhelloworld
+ #
+ if test x$build_motifapps = xyes ; then
+-   PKG_CHECK_MODULES(XPAWHELLOWORLD, xaw8 xprintutil xp)
++   PKG_CHECK_MODULES(XPAWHELLOWORLD, xaw7 xprintutil xp)
+    XPAWHELLOWORLD_CFLAGS="$XPAWHELLOWORLD_CFLAGS $MOTIF_CFLAGS"
+    XPAWHELLOWORLD_LIBS="$XPAWHELLOWORLD_LIBS $MOTIF_LIBS"
+ fi
+@@ -105,7 +105,7 @@ fi
+ # xpxthelloworld
+ #
+ 
+-PKG_CHECK_MODULES(XPXTHELLOWORLD, xaw8 xprintutil xt xp)
++PKG_CHECK_MODULES(XPXTHELLOWORLD, xaw7 xprintutil xt xp)
+ 
+ XORG_RELEASE_VERSION
+ 
